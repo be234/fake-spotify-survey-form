@@ -4,9 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="spotify2.png" />
+    <title>Fake spotify survey form</title>
 </head>
 <body>
-    <h1>Spotify survey form</h1>
-</body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Spotify Survey Form</h1>
+          <p id="description" class="description text-center">
+            This survey will help to provide better user experience
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>How long have you been using Spotify?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="-year">Less than a year</option>
+              <option value="+year">More than a year</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>What is your preference?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="rock"
+                type="radio"
+                class="input-radio"
+                checked
+              />Rock</label
+            >
+            
+            <label>
+              <input
+                name="user-recommend"
+                value="jazz"
+                type="radio"
+                class="input-radio"
+              />Jazz</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="hip-hop"
+                type="radio"
+                class="input-radio"
+              />Hip-hop</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>What did you like about our app?</p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="music-quality">Music Quality</option>
+              <option value="group-sessions">Group Sessions</option>
+              <option value="weekly-playlists">Weekly Playlists</option>
+              <option value="offline-listening">Offline Listening</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="podcasts"
+                type="checkbox"
+                class="input-checkbox"
+              />Podcasts</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="Design"
+                type="checkbox"
+                class="input-checkbox"
+              />Design</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="music-quality"
+                type="checkbox"
+                class="input-checkbox"
+              />Music Quality</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Visuals</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="weekly-playlists"
+                type="checkbox"
+                class="input-checkbox"
+              />Weekly Playlists</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="year-wraps"
+                type="checkbox"
+                class="input-checkbox"
+              />Year wraps</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="podcasts-quality"
+                type="checkbox"
+                class="input-checkbox"
+              />podcasts quality</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="nothing"
+                type="checkbox"
+                class="input-checkbox"
+              />Nothing</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>      
+    </body>
 </html>
